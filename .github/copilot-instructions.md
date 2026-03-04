@@ -86,6 +86,7 @@
 ## API and security conventions (finalized)
 
 - API is private-by-default and authentication-protected.
+- Authentication library is BetterAuth, using the latest stable release.
 - Use REST-style, versioned endpoints under `/api/v1/*`.
 - Prefer resource-oriented routes for receipts/items/insights; use nested resources where appropriate.
 - For analysis execution, prefer resource creation style (for example `POST /api/v1/receipts/:id/analyses`) over ad-hoc action naming.
