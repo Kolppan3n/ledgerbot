@@ -4,6 +4,32 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.layout-default {
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-width: 100vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+
+.layout-header {
+  grid-area: header;
+}
+.layout-sidebar {
+  grid-area: sidebar;
+}
+.layout-main {
+  grid-area: main;
+}
+.layout-footer {
+  grid-area: footer;
+}
+
 :root {
   --background: oklch(0.9907 0.0029 307.0767);
   --foreground: oklch(0.1568 0.0786 300.7359);
